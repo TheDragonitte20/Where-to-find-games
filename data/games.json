@@ -1,0 +1,141 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Elden Ring",
+      "genre": "RPG",
+      "release_date": "2022-02-25",
+      "description": "Un juego de rol de acción en tercera persona con mundo abierto desarrollado por FromSoftware.",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Elden_Ring_Box_art.jpg/220px-Elden_Ring_Box_art.jpg",
+      "sources": [
+        {
+          "site": "FitGirl Repacks",
+          "url": "https://fitgirl-repacks.site",
+          "type": "Directo",
+          "size": "30.5 GB",
+          "seeders": null
+        },
+        {
+          "site": "1337x",
+          "url": "https://1337x.to",
+          "type": "Torrent",
+          "size": "48.2 GB",
+          "seeders": 2450
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cyberpunk 2077",
+      "genre": "RPG",
+      "release_date": "2020-12-10",
+      "description": "Juego de rol de mundo abierto ambientado en Night City, una megalópolis obsesionada con el poder y la modificación corporal.",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Cyberpunk_2077_box_art.jpg/220px-Cyberpunk_2077_box_art.jpg",
+      "sources": [
+        {
+          "site": "SteamRIP",
+          "url": "https://steamrip.com",
+          "type": "Directo",
+          "size": "70 GB",
+          "seeders": null
+        },
+        {
+          "site": "RARBG",
+          "url": "https://rarbg.to",
+          "type": "Magnet",
+          "size": "65 GB",
+          "seeders": 890
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Red Dead Redemption 2",
+      "genre": "Aventura",
+      "release_date": "2018-10-26",
+      "description": "Épica aventura del viejo oeste donde sigues la historia de Arthur Morgan y la banda de Van der Linde.",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Red_Dead_Redemption_II_cover.jpg/220px-Red_Dead_Redemption_II_cover.jpg",
+      "sources": [
+        {
+          "site": "FitGirl Repacks",
+          "url": "https://fitgirl-repacks.site",
+          "type": "Directo",
+          "size": "66 GB",
+          "seeders": null
+        },
+        {
+          "site": "1337x",
+          "url": "https://1337x.to",
+          "type": "Torrent",
+          "size": "110 GB",
+          "seeders": 1520
+        },
+        {
+          "site": "SteamUnlocked",
+          "url": "https://steamunlocked.net",
+          "type": "Directo",
+          "size": "115 GB",
+          "seeders": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "God of War Ragnarök",
+      "genre": "Acción",
+      "release_date": "2022-11-09",
+      "description": "Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas.",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg/220px-God_of_War_Ragnar%C3%B6k_cover.jpg",
+      "sources": [
+        {
+          "site": "Dodi Repacks",
+          "url": "https://dodi-repacks.site",
+          "type": "Directo",
+          "size": "45 GB",
+          "seeders": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Hogwarts Legacy",
+      "genre": "Aventura",
+      "release_date": "2023-02-10",
+      "description": "Juego de rol de mundo abierto ambientado en el universo de Harry Potter del siglo XIX.",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Hogwarts_Legacy_key_art.jpg/220px-Hogwarts_Legacy_key_art.jpg",
+      "sources": [
+        {
+          "site": "FitGirl Repacks",
+          "url": "https://fitgirl-repacks.site",
+          "type": "Directo",
+          "size": "35 GB",
+          "seeders": null
+        },
+        {
+          "site": "1337x",
+          "url": "https://1337x.to",
+          "type": "Torrent",
+          "size": "90 GB",
+          "seeders": 3200
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Baldur's Gate 3",
+      "genre": "RPG",
+      "release_date": "2023-08-03",
+      "description": "RPG de fantasía basado en D&D con decisiones que realmente importan.",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Baldur%27s_Gate_3_cover_art.jpg/220px-Baldur%27s_Gate_3_cover_art.jpg",
+      "sources": [
+        {
+          "site": "GOG Games",
+          "url": "https://gog-games.to",
+          "type": "Directo",
+          "size": "120 GB",
+          "seeders": null
+        }
+      ]
+    }
+  ]
+}
