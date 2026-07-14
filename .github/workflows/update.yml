@@ -1,0 +1,43 @@
+name: Actualizar Juegos desde Steamrip
+
+on:
+  schedule:
+    # Ejecutar cada 6 horas
+    - cron: '0 */6 * * *'
+  
+  # También permite ejecutar manualmente
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Ejecutar script de actualización
+        run: node .github/scripts/update-games.js
+      
+      - name: Verificar cambios
+        id: verify
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit y Push
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/games.json
+          git commit -m "🎮 Auto-update: Nuevos juegos desde Steamrip"
+          git push
