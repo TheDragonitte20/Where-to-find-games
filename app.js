@@ -1,109 +1,52 @@
-/ Esperamos a que todo el DOM esté cargado
-document.addEventListener('DOMContentLoaded', function() {
+// Dentro de la función openModal, reemplaza la parte del modal:
+
+window.openModal = function(id) {
+    const game = allGames.find(g => g.id === id);
+    if (!game) return;
     
-    const DATA_URL = 'data/games.json';
-    let allGames = [];
-    
-    console.log('Iniciando carga...');
-    
-    // Elementos del DOM
-    const container = document.getElementById('gamesContainer');
-    const searchInput = document.getElementById('searchInput');
-    const genreFilter = document.getElementById('genreFilter');
-    
-    // Cargar juegos
-    fetch(DATA_URL)
-        .then(response => {
-            console.log('Status:', response.status);
-            if (!response.ok) {
-                throw new Error('Error ' + response.status);
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Datos cargados:', data);
-            allGames = data.games || [];
-            console.log('Total juegos:', allGames.length);
-            renderGames(allGames);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            container.innerHTML = `
-                <div style="text-align:center; padding:40px; color:#e94560;">
-                    <h3>Error al cargar juegos</h3>
-                    <p>${error.message}</p>
-                    <p style="font-size:12px; margin-top:10px;">
-                        Intenta recargar la página (Ctrl+F5)
-                    </p>
-                </div>
-            `;
-        });
-    
-    // Función para mostrar juegos
-    function renderGames(games) {
-        if (games.length === 0) {
-            container.innerHTML = '<p style="text-align:center; padding:20px;">No hay juegos</p>';
-            return;
-        }
-        
-        container.innerHTML = games.map(game => `
-            <div class="game-card" onclick="openModal(${game.id})">
-                <img src="${game.cover}" class="game-cover" alt="${game.title}">
-                <div class="game-info">
-                    <h3>${game.title}</h3>
-                    <p>${game.genre}</p>
+    // Generar HTML para todas las fuentes
+    const sourcesHtml = game.sources.map(source => `
+        <div class="source-item" style="
+            background: #2a2a3a;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        ">
+            <div>
+                <strong style="color: #e94560;">${source.site}</strong>
+                <span style="
+                    background: #4a4a6a;
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                ">${source.type}</span>
+                <div style="color: #888; font-size: 14px; margin-top: 5px;">
+                    📦 ${source.size}
                 </div>
             </div>
-        `).join('');
-    }
+            <a href="${source.url}" target="_blank" class="source-btn" style="
+                background: #e94560;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 5px;
+                text-decoration: none;
+            ">Descargar</a>
+        </div>
+    `).join('');
     
-    // Función de búsqueda
-    function filterGames() {
-        const searchTerm = searchInput.value.toLowerCase().trim();
-        const selectedGenre = genreFilter.value;
+    document.getElementById('modalBody').innerHTML = `
+        <h2>${game.title}</h2>
+        <p><strong>Género:</strong> ${game.genre}</p>
+        <p><strong>Fecha:</strong> ${game.release_date}</p>
+        <p>${game.description}</p>
         
-        let filtered = allGames;
-        
-        if (searchTerm) {
-            filtered = filtered.filter(game => 
-                game.title.toLowerCase().includes(searchTerm)
-            );
-        }
-        
-        if (selectedGenre) {
-            filtered = filtered.filter(game => game.genre === selectedGenre);
-        }
-        
-        renderGames(filtered);
-    }
+        <h3 style="margin-top: 30px; margin-bottom: 15px;">Fuentes de descarga:</h3>
+        ${sourcesHtml || '<p>No hay fuentes disponibles</p>'}
+    `;
     
-    // Event listeners
-    searchInput.addEventListener('input', filterGames);
-    genreFilter.addEventListener('change', filterGames);
-    
-    // Modal
-    window.openModal = function(id) {
-        const game = allGames.find(g => g.id === id);
-        if (!game) return;
-        
-        document.getElementById('modalBody').innerHTML = `
-            <h2>${game.title}</h2>
-            <p><strong>Género:</strong> ${game.genre}</p>
-            <p>${game.description}</p>
-            <a href="https://steamrip.com" target="_blank" class="source-btn">Descargar</a>
-        `;
-        document.getElementById('gameModal').style.display = 'block';
-    };
-    
-    // Cerrar modal
-    document.querySelector('.close-btn').onclick = function() {
-        document.getElementById('gameModal').style.display = 'none';
-    };
-    
-    window.onclick = function(e) {
-        const modal = document.getElementById('gameModal');
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    };
-});
+    document.getElementById('gameModal').style.display = 'block';
+};
