@@ -111,3 +111,10 @@ header h1 span { color: var(--accent); }
 .buy-btn:hover { background: var(--accent); }
 
 .buy-btn strong { font-size: 18px; }
+
+.lang-selector { margin-top: 15px; }
+.lang-btn {
+    background: #1a1a2e; border: 1px solid #4ecca3; color: white;
+    padding: 5px 15px; cursor: pointer; border-radius: 5px; margin: 0 5px;
+}
+.lang-btn.active { background: #4ecca3; color: #000; }
