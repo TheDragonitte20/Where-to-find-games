@@ -10,8 +10,20 @@
       "sources": [
         {
           "site": "SteamRIP",
-          "url": "https://steamrip.com/elden-ring-de-free-download-1gg/",
+          "url": "https://steamrip.com",
           "type": "Directo",
+          "size": "50 GB"
+        },
+        {
+          "site": "AstralGames",
+          "url": "https://astralgames.net",
+          "type": "Directo",
+          "size": "48 GB"
+        },
+        {
+          "site": "AnkerGames",
+          "url": "https://ankergames.net",
+          "type": "Torrent",
           "size": "50 GB"
         }
       ]
