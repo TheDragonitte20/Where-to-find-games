@@ -65,6 +65,30 @@
           "url": "https://ankergames.net/game/subnautica-2"
         }
       ]
+    },
+    {
+      "id": 1784044006330,
+      "title": "",
+      "genre": "Acción / Aventura / Multijugador",
+      "cover": "",
+      "description": "",
+      "links": [
+        {
+          "store": "Streamrip",
+          "price": "Consultar",
+          "url": "https://steamrip.com/subnautica-2-free-download/"
+        },
+        {
+          "store": "Astral Games",
+          "price": "Consultar",
+          "url": "https://astralgames.net/game/subnautica-2"
+        },
+        {
+          "store": "Anker Games",
+          "price": "Consultar",
+          "url": "https://ankergames.net/game/subnautica-2"
+        }
+      ]
     }
   ]
 }
