@@ -59,36 +59,6 @@
           "url": "https://ankergames.net/game/cyberpunk-2077"
         }
       ]
-    },
-    {
-      "id": 1784046304989,
-      "title": "",
-      "genre": {
-        "es": "Acción / Aventura / Multijugador ",
-        "en": "Action / Adventure / Multiplayer"
-      },
-      "description": {
-        "es": "",
-        "en": ""
-      },
-      "cover": "https://ankergames.net/uploads/poster/10-2024/IUgOUDjwWT.jpg",
-      "links": [
-        {
-          "store": "SteamRip",
-          "price": "Consultar",
-          "url": "https://steamrip.com/subnautica-2-free-download/"
-        },
-        {
-          "store": "Astral Games",
-          "price": "Consultar",
-          "url": "https://astralgames.net/game/cyberpunk-2077"
-        },
-        {
-          "store": "Anker Games",
-          "price": "Consultar",
-          "url": "https://ankergames.net/game/cyberpunk-2077"
-        }
-      ]
     }
   ]
 }
