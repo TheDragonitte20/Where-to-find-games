@@ -23,27 +23,6 @@
         { "store": "Astral Games", "url": "https://astralgames.net/game/cyberpunk-2077" },
         { "store": "Anker Games", "url": "https://ankergames.net/game/cyberpunk-2077" }
         
-  { 
-    "id": 1784041898859,
-      "title": "Subnautica 2",
-      "genre": "Acción / Aventura / Multijugador",
-      "cover": "https://ankergames.net/uploads/poster/05-2026/subnautica-2-poster_wIx8hD_1778599305.jpg",
-      "description": "Explora un nuevo mundo submarino en esta esperada secuela.",
-      "links": [
-        {
-          "store": "Steamrip",
-          "price": "Consultar",
-          "url": "https://steamrip.com/subnautica-2-free-download/"
-        },
-        {
-          "store": "Astral Games",
-          "price": "Consultar",
-          "url": "https://astralgames.net/game/subnautica-2"
-        },
-        {
-          "store": "Anker Games",
-          "price": "Consultar",
-          "url": "https://ankergames.net/game/subnautica-2"
         }
       ]
     }
