@@ -7,9 +7,18 @@
       "cover": "https://ankergames.net/uploads/poster/09-2024/g0Bas1tohY.jpg",
       "description": "Un juego épico en un mundo de fantasía oscura.",
       "links": [
-        { "store": "Steamrip", "url": "https://steamrip.com/elden-ring-de-free-download-1gg/" },
-        { "store": "Astral Games", "url": "https://astralgames.net/game/elden-ring" },
-        { "store": "Anker Games", "url": "https://ankergames.net/game/elden-ring" }
+        {
+          "store": "Steamrip",
+          "url": "https://steamrip.com/elden-ring-de-free-download-1gg/"
+        },
+        {
+          "store": "Astral Games",
+          "url": "https://astralgames.net/game/elden-ring"
+        },
+        {
+          "store": "Anker Games",
+          "url": "https://ankergames.net/game/elden-ring"
+        }
       ]
     },
     {
@@ -19,10 +28,42 @@
       "cover": "https://ankergames.net/uploads/poster/10-2024/IUgOUDjwWT.jpg",
       "description": "Una historia de acción y aventura de mundo abierto ambientada en Night City.",
       "links": [
-        { "store": "Steamrip", "url": "https://steamrip.com/cryberpunk-2k77-d7/" },
-        { "store": "Astral Games", "url": "https://astralgames.net/game/cyberpunk-2077" },
-        { "store": "Anker Games", "url": "https://ankergames.net/game/cyberpunk-2077" }
-        
+        {
+          "store": "Steamrip",
+          "url": "https://steamrip.com/cryberpunk-2k77-d7/"
+        },
+        {
+          "store": "Astral Games",
+          "url": "https://astralgames.net/game/cyberpunk-2077"
+        },
+        {
+          "store": "Anker Games",
+          "url": "https://ankergames.net/game/cyberpunk-2077"
+        }
+      ]
+    },
+    {
+      "id": 1784043599272,
+      "title": "Subnautica 2",
+      "genre": "Acción / Aventura / Multijugador",
+      "cover": "https://ankergames.net/uploads/poster/05-2026/subnautica-2-poster_wIx8hD_1778599305.jpg",
+      "description": "",
+      "links": [
+        {
+          "store": "Streamrip",
+          "price": "Consultar",
+          "url": "https://steamrip.com/subnautica-2-free-download/"
+        },
+        {
+          "store": "Astral Games",
+          "price": "Consultar",
+          "url": "https://astralgames.net/game/subnautica-2"
+        },
+        {
+          "store": "Anker Games",
+          "price": "Consultar",
+          "url": "https://ankergames.net/game/subnautica-2"
+        }
       ]
     }
   ]
