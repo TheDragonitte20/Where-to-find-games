@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de Juegos</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #121212; color: white; }
+        input, textarea { width: 100%; margin-bottom: 10px; padding: 10px; background: #222; color: white; border: 1px solid #444; }
+        pre { background: #000; padding: 15px; color: #0f0; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h2>🚀 Creador de JSON para GameStore</h2>
+    <input type="text" id="title" placeholder="Título del juego">
+    <input type="text" id="genre" placeholder="Género">
+    <input type="text" id="cover" placeholder="Link de la imagen (URL)">
+    <textarea id="desc" placeholder="Descripción corta"></textarea>
+    <input type="text" id="store1" placeholder="Tienda 1 (Ej: Steam)">
+    <input type="text" id="url1" placeholder="URL Tienda 1">
+    <button onclick="generar()">Generar Código</button>
+
+    <h3>Copia esto dentro de tu games.json:</h3>
+    <pre id="output"></pre>
+
+    <script>
+        function generar() {
+            const data = {
+                id: Date.now(),
+                title: document.getElementById('title').value,
+                genre: document.getElementById('genre').value,
+                cover: document.getElementById('cover').value,
+                description: document.getElementById('desc').value,
+                links: [
+                    { store: document.getElementById('store1').value, price: "Ver precio", url: document.getElementById('url1').value }
+                ]
+            };
+            document.getElementById('output').innerText = JSON.stringify(data, null, 2) + ",";
+        }
+    </script>
+</body>
+</html>
