@@ -19,8 +19,9 @@
       "cover": "https://ankergames.net/uploads/poster/10-2024/IUgOUDjwWT.jpg",
       "description": "Una historia de acción y aventura de mundo abierto ambientada en Night City.",
       "links": [
-        { "store": "GOG", "price": "29.99€", "url": "https://www.gog.com/" },
-        { "store": "Steam", "price": "59.99€", "url": "https://store.steampowered.com/" }
+        { "store": "Steamrip", "url": "https://steamrip.com/cryberpunk-2k77-d7/" },
+        { "store": "Astral Games", "url": "https://astralgames.net/game/cyberpunk-2077" },
+        { "store": "Anker Games", "url": "https://ankergames.net/game/cyberpunk-2077" }
       ]
     }
   ]
