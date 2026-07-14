@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": 2,
+      "title": "Nuevo Juego 2026-07-14",
+      "genre": "Por verificar",
+      "release_date": "2026-07-14",
+      "description": "Detectado automáticamente desde Steamrip",
+      "cover": "https://via.placeholder.com/220x300?text=Nuevo",
+      "sources": [
+        {
+          "site": "SteamRIP",
+          "url": "https://steamrip.com",
+          "type": "Directo",
+          "size": "Por verificar"
+        }
+      ]
+    },
+    {
       "id": 1,
       "title": "Elden Ring",
       "genre": "RPG",
