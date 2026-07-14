@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Elden Ring",
       "genre": "Acción / RPG",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_small/co4jni.png",
       "description": "Un juego épico en un mundo de fantasía oscura.",
       "links": [
         { "store": "Steamrip", "url": "https://steamrip.com/elden-ring-de-free-download-1gg/" },
@@ -16,7 +16,7 @@
       "id": 2,
       "title": "Cyberpunk 2077",
       "genre": "RPG / Mundo Abierto",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_small/co64re.png",
       "description": "Una historia de acción y aventura de mundo abierto ambientada en Night City.",
       "links": [
         { "store": "GOG", "price": "29.99€", "url": "https://www.gog.com/" },
